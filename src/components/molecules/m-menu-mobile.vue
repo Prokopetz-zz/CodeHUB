@@ -1,12 +1,12 @@
 <template>
   <div class="menu">
-    <div>
+    <div class="item">
       Post
     </div>
-    <div>
+    <div class="item">
       Home
     </div>
-    <div>
+    <div class="item">
       Settings
     </div>
   </div>
@@ -23,7 +23,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="stylus">
 
 .menu {
   display: flex;
@@ -33,7 +33,9 @@ export default {
   bottom: 0;
   left: 0;
   right:0;
-
+  .item {
+    padding: 20px 0px;
+  }
 }
 
 

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import MMenuMobile from '@/components/m-menu-mobile';
+import MMenuMobile from '@/components/molecules/m-menu-mobile';
 
 export default {
   name: 'Index',
