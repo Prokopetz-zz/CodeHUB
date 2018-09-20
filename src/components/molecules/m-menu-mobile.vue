@@ -1,20 +1,25 @@
 <template>
   <div class="menu">
-    <div class="item">
+    <a-text-box>
       Post
-    </div>
-    <div class="item">
+    </a-text-box>
+    <a-text-box>
       Home
-    </div>
-    <div class="item">
+    </a-text-box>
+    <a-text-box>
       Settings
-    </div>
+    </a-text-box>
   </div>
 </template>
 
 <script>
+import ATextBox from '@/components/atoms/a-text-box';
+
 export default {
-  name: 'HelloWorld',
+  name: 'MenuMobile',
+  components: {
+    ATextBox,
+  },
 };
 </script>
 
@@ -27,8 +32,5 @@ export default {
   bottom: 0;
   left: 0;
   right:0;
-  .item {
-    padding: 20px 0px;
-  }
 }
 </style>
