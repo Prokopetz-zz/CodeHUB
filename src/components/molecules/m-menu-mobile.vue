@@ -15,16 +15,10 @@
 <script>
 export default {
   name: 'HelloWorld',
-  data() {
-    return {
-      msg: '',
-    };
-  },
 };
 </script>
 
 <style scoped lang="stylus">
-
 .menu {
   display: flex;
   align-items: center;
@@ -37,6 +31,4 @@ export default {
     padding: 20px 0px;
   }
 }
-
-
 </style>
