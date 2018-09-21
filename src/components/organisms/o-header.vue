@@ -2,20 +2,20 @@
   <div class="header">
     <m-search></m-search>
     <div class="svg-box">
-      <profile-svg></profile-svg>
+      <filter-svg></filter-svg>
     </div>
   </div>
 </template>
 
 <script>
 import MSearch from '@/components/molecules/m-search';
-import ProfileSvg from '@/assets/icons/user.svg';
+import FilterSvg from '@/assets/icons/filter.svg';
 
 export default {
   name: 'OHeader',
   components: {
     MSearch,
-    ProfileSvg,
+    FilterSvg,
   },
 };
 </script>
