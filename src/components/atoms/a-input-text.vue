@@ -25,11 +25,15 @@ export default {
 </script>
 
 <style lang='stylus' scoped>
-input {
-  padding: 1rem;
-  font-size: 17px;
-  border: none;
-  background: #fff;
+form{
+  input {
+    padding: 1rem;
+    font-size: 17px;
+    border: none;
+    background: #fff;
+    width: 90%;
+  }
+  width: 100%;
 }
 form:after {
   content: "";

@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <o-header></o-header>
-    <m-footer page="home"/>  
+    <m-footer page="home"/>
   </div>
 </template>
 
