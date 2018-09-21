@@ -1,11 +1,13 @@
 <template>
   <div class="menu" id="post">
-    <div class="item current">
+    <div class="item page">
+      <post-svg/>
     </div>
     <div class="item page" id="home">
-      <house-outline-svg/>
+      <home-svg/>
     </div>
-    <div class="item current" id="profile">
+    <div class="item page" id="profile">
+      <profile-svg/>
     </div>
   </div>
 </template>
@@ -13,14 +15,18 @@
 <script>
 import ATextBox from '@/components/atoms/a-text-box';
 import AH1 from '@/components/atoms/a-h1';
-import HouseOutlineSvg from '@/assets/house-outline.svg';
+import PostSvg from '@/assets/icons/plus.svg';
+import HomeSvg from '@/assets/icons/house-outline.svg';
+import ProfileSvg from '@/assets/icons/user.svg';
 
 export default {
   name: 'MenuMobile',
   components: {
     ATextBox,
     AH1,
-    HouseOutlineSvg,
+    PostSvg,
+    HomeSvg,
+    ProfileSvg,
   },
   props: {
     page: String,
@@ -61,11 +67,7 @@ export default {
   svg {
     width: 2rem;
     height: 2rem;
-  }
-  &.not-current {
-    svg {
-      fill: #ccc;
-    }
+    fill: rgba(0, 0, 0, 0.65);
   }
   &.current {
     h1 {
