@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    <m-menu-mobile/>
+    <m-menu-mobile page="home"/>
   </div>
 </template>
 
