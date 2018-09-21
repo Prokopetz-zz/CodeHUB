@@ -1,16 +1,16 @@
 <template>
   <div class="index">
-    <m-menu-mobile page="home"/>
+    <m-footer page="home"/>
   </div>
 </template>
 
 <script>
-import MMenuMobile from '@/components/molecules/m-menu-mobile';
+import MFooter from '@/components/molecules/m-footer';
 
 export default {
   name: 'Index',
   components: {
-    MMenuMobile,
+    MFooter,
   },
 };
 </script>
