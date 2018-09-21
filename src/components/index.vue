@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <o-header></o-header>
-    <m-menu-mobile/>
+    <m-menu-mobile page="home"/>  
   </div>
 </template>
 
