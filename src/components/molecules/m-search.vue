@@ -1,9 +1,9 @@
 <template>
-  <div class="father">
-    <div class="son">
-      <search-svg/>
-    </div>
-    <a-input-text text="Pesquisar"></a-input-text>
+  <div class="search">
+    <form id="search-form">
+      <input type="search" placeholder="Search">
+
+    </form>
   </div>
 </template>
 
@@ -21,20 +21,62 @@ export default {
 </script>
 
 <style lang='stylus' scoped>
-.father{
-  .son{
-    svg {
-      width: 1.2rem;
-      height: 1.5rem;
-      fill: rgba(0, 0, 0, 0.65);
-    }
-    padding: 0 1rem;
-    margin-top: 0.17rem;
-  }
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  row-flex-direction: column;
-  width: 100%;
+
+input {
+	outline: none;
 }
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+  font-size: 14px;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
+input[type=search] {
+	background: #fff url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #fff;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+
+  -webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+input[type=search] {
+	width: 15px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+input[type=search]:hover {
+	background-color: #fff;
+}
+input[type=search]:focus {
+	width: 170px;
+	padding-left: 32px;
+	color: #ccc;
+	background-color: #fff;
+	cursor: auto;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+input:-moz-placeholder {
+	color: transparent;
+}
+input::-webkit-input-placeholder {
+	color: transparent;
+}
+
 </style>

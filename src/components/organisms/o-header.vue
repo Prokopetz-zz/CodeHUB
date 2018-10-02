@@ -39,5 +39,6 @@ export default {
   left: 0;
   right:0;
   box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  padding: 5px;
 }
 </style>
